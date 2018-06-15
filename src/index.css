@@ -1,0 +1,28 @@
+
+.jumbotron {
+  background-image: url("http://i65.tinypic.com/jjyamg.gif");
+  font-family: 'Bangers', cursive;
+  opacity: 0.9;
+}
+body {
+  background-image: url("http://i67.tinypic.com/fuoqhx.png");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: right bottom;
+  font-family: 'Share Tech Mono', monospace;
+  color: yellow;
+  opacity: 0.8;
+  word-wrap: break-word;
+}
+.card-body {
+  background-image: url("http://i65.tinypic.com/2dh5ron.jpg");
+  word-wrap: break-word;
+  font-size: small;
+}
+.input-group{
+  margin: 0 auto;
+
+}
+
+
+
