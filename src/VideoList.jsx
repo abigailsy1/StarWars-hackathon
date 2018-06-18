@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Photos from './Photos';
+import Videos from './Videos';
 
-class PhotoList extends Component {
+class VideoList extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -19,22 +19,22 @@ class PhotoList extends Component {
         this.setState({ expanded: !this.state.expanded })
     }
     render() {
-        const photoList = this.props.photos;
+        const videoList = this.props.videos;
         if (!this.state.expanded) {
-            return <p className="btn btn-dark" onClick={this.openExpand}>PHOTOS!!!!</p>
+            return <p className="btn btn-dark" onClick={this.openExpand}>VIDEOS!!</p>
         }
         return (
             <div>
                 <p className="btn btn-danger" onClick={this.closeExpand}>CLOSE THIS PEASANT</p>
                 <div className="container text-center">
-                <div className="d-flex justify-content-center flex-wrap">
-                    
+                    <div className="d-flex justify-content-center flex-wrap">
+
                         {
-                            photoList.map((image) => {
-                                console.log(image)
+                            videoList.map((videos) => {
+                                console.log(videos)
                                 return (
-                                    <div key={image.id}>  
-                                        <Photos photoInfo={image} />
+                                    <div key={videos.id}>
+                                        <Videos videoInfo={videos} />
                                     </div>
                                 )
                             })
@@ -46,4 +46,4 @@ class PhotoList extends Component {
     }
 }
 
-export default PhotoList; 
+export default VideoList; 

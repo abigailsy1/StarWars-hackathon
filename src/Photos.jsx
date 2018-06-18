@@ -23,21 +23,23 @@ class Photos extends Component {
     render() {
         const details = this.props.photoInfo;
 
-        if (!this.state.expanded) {
-            return <p className="btn btn-dark" onClick={this.openExpand}>VIEW</p>
-        }
+        // if (!this.state.expanded) {
+        //     return <p className="btn btn-dark" onClick={this.openExpand}>VIEW</p>
+        // }
 
         return (
-            <div className="container" word-wrap="word-wrap break-word">
+            <div className="column" word-wrap="word-wrap break-word">
             
-                <p className="btn btn-danger" onClick={this.closeExpand}>CLOSE THIS PEASANT</p>
-                <ul className="list-group">
-                    <li>
-                    <img src={details.previewURL} alt="hello"/>
-                    </li>
+                {/* <p className="btn btn-danger" onClick={this.closeExpand}>CLOSE THIS PEASANT</p> */}
+                {/* <ul className="list-group"> */}
+                    {/* <li> */}
+                    <figure className="mx-auto" data-width= "220">
+                    <img src={details.previewURL} className="figure-img img-fluid rounded" alt="hello"/>
+                    </figure>
+                    {/* </li> */}
              
                     
-                </ul>
+                {/* </ul> */}
             </div>
         )
     }
